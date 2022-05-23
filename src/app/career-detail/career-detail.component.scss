@@ -1,0 +1,364 @@
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (orientation: portrait){
+    .set-s1{
+        display: block !important;
+        padding: 0px 30px;
+    }
+    .title-s1{
+        padding-bottom: 10px;
+    }
+    .content-satu{
+        width: 100% !important;
+    }
+    .content-dua{
+        width: 100% !important;
+    }
+    .content-tiga{
+        width: 100% !important;
+    }
+    .qualification{
+        position: relative;
+        right: 0px !important;
+    }
+
+    // section 2
+    .apply-now{
+        padding-bottom: 20px !important;
+    }
+    .set-apply{
+        display: block !important;
+        padding-left: 25px !important;
+    }
+    .dis-block{
+        display: block !important;
+    }
+    .complete-name{
+        width: 313px !important;
+        margin-top: 10px !important;
+    }
+    .email{
+        width: 313px !important;
+        margin-top: 10px !important;
+    }
+    .phone{
+        width: 313px !important;
+        margin-top: 10px !important;
+    }
+    .cv{
+        width: 89px;
+        margin-top: 10px !important;
+    }
+    .linked-in{
+        width: 313px !important;
+    }
+    .website{
+        width: 313px !important;
+    }
+    .salary{
+        width: 313px;
+    }
+    .join{
+        width: 313px;
+    }
+    .set-btn{
+        display: flex;
+        justify-content: center !important;
+        padding-right: 25px !important;
+    }
+    .line{
+        width: 313px !important;
+    }
+}
+
+@media only screen and (min-device-width: 390px) and (max-device-width:400px) and (orientation:portrait) {
+    .complete-name{
+        width: 340px !important;
+    }
+    .email{
+        width: 340px !important;
+    }
+    .phone{
+        width: 340px !important;
+    }
+    .line{
+        width: 340px !important;
+    }
+    .linked-in{
+        width: 340px !important;
+    }
+    .website{
+        width: 340px !important;
+    }
+    .salary{
+        width: 340px !important;
+    }
+    .join{
+        width: 340px !important;
+    }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
+    .content-satu{
+        width: 50% !important;
+    }
+    .content-dua{
+        width: 50% !important;
+    }
+    .content-tiga{
+        width: 50% !important;
+    }
+
+    //section 2
+    .paralax-section2{
+        padding: 40px 0px !important;
+    }
+    .apply-now{
+        position: relative;
+        left: 40px;
+    }
+    .set-input{
+        position: relative;
+        right: 40px;
+    }
+    .complete-name {
+        width: 350px !important;
+    }
+    .email {
+        width: 350px !important;
+    }
+    .phone {
+        width: 350px !important;
+    }
+    .line{
+        width: 520px !important;
+    }
+    .linked-in{
+        width: 520px !important;
+    }
+    .website{
+        width: 520px !important;
+    }
+    .salary{
+        width: 250px !important;
+    }
+    .join{
+        width: 250px !important;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width:1024px) and (orientation:portrait) {
+    .content-satu{
+        width: 50% !important;
+    }
+    .content-dua{
+        width: 50% !important;
+    }
+    .content-tiga{
+        width: 50% !important;
+    }
+
+    //section 2
+    .paralax-section2{
+        padding: 40px 0px !important;
+    }
+    .apply-now{
+        position: relative;
+        left: 40px;
+    }
+    .set-input{
+        position: relative;
+        right: 40px;
+    }
+    .complete-name {
+        width: 350px !important;
+    }
+    .email {
+        width: 350px !important;
+    }
+    .phone {
+        width: 350px !important;
+    }
+    .line{
+        width: 520px !important;
+    }
+    .linked-in{
+        width: 520px !important;
+    }
+    .website{
+        width: 520px !important;
+    }
+    .salary{
+        width: 250px !important;
+    }
+    .join{
+        width: 250px !important;
+    }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
+    .apply-now{
+        position: relative;
+        left: 0px !important;
+    }
+    .content-satu{
+        width: 100% !important;
+    }
+    .content-dua{
+        width: 100% !important;
+    }
+    .content-tiga{
+        width: 100% !important;
+    }
+    .set-input {
+        position: relative;
+        right: 0px !important;
+    }
+    .complete-name{
+        width: 365px !important;
+    }
+    .email{
+        width: 365px !important;
+    }
+    .phone{
+        width: 365px !important;
+    }
+    .line{
+        width: 365px !important;
+    }
+    .linked-in{
+        width: 365px !important;
+    }
+    .website{
+        width: 365px !important;
+    }
+    .salary{
+        width: 365px !important;
+    }
+    .join{
+        width: 365px !important;
+    }
+}
+
+.paralax-section1{
+    padding:40px 0px;
+}
+.title-s1{
+    font-size: 1rem;
+    color: #0082C8;
+}
+.qualification{
+    position: relative;
+    right: 20px;
+}
+.content-satu{
+    width: 645px; 
+    color: #787878;
+    font-size: 1rem;
+}
+.content-dua{
+    width: 650px; 
+    color: #787878;
+    font-size: 1rem;
+}
+.content-tiga{
+    width: 624px; 
+    color: #787878;
+    font-size: 1rem;
+}
+
+// section 2 
+.paralax-section2{
+    background-color: #F7F7F7;
+    padding: 40px 0px;
+}
+.apply-now{
+    font-size: 1rem;
+    color: #0082C8;
+    font-weight: bold;
+}
+.complete-name{
+    width: 471px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.email{
+    width: 471px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.phone{
+    width: 471px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.cv{
+    width: 89px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+}
+.linked-in{
+    width: 645px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.website{
+    width: 645px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.salary{
+    width: 313px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.join{
+    width: 313px;
+    height: 38px;
+    border: 1px solid #D6D6D6;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 1;
+    padding-left: 10px;
+}
+.btn-submit{
+    background-color: #0082C8;
+    border: 1px solid #0082C8;
+    color: #ffffff;
+    width: 214px;
+    height: 42px;
+    border-radius: 4px;
+    opacity: 1;
+}
+.line{
+    border: 1px solid #D6D6D6;
+    width: 645px;
+}
+.checkbox{
+    position: relative;
+    top: 5px;
+}

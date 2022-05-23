@@ -1,0 +1,255 @@
+<section id="home">
+  <div>
+    <div
+      id="nav"
+      class="nav nav-2"
+      fxLayout="row"
+      fxLayoutAlign="space-around center"
+    >
+      <input type="checkbox" id="check"  (click)="openMenu()"/>
+      <label for="check" class="checkbtn test">
+        <i id="showOne" class="icon-crumb icon-toggle"></i>
+      </label>
+      <div class="icon-header-css">
+        <div class="logo1"></div>
+      </div>
+
+      <ul
+        class="navbar1 nav-1"
+        id="close"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        fxLayoutGap="40px"
+      >
+        <label for="check" class="checkbtn" (click)="closeSideNav()">
+          <li><a class="icon-close"></a></li>
+        </label>
+        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+        <li class="menu">
+          <a (click)="show()" class="text-a side-nav">Our Products</a>
+          <i class="icon-chevron-black"></i>
+        </li>
+        <li class="menu">
+          <a routerLink="/about-us" class="text-a">About Us</a>
+        </li>
+        <li class="menu"><a routerLink="/career" class="text-a" >Career</a></li>
+        <li class="menu menu-news" >
+          <a routerLink="/news" class="text-a" >News</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/contact-us" class="text-a">Contact Us</a>
+        </li>
+        <li class="menu">
+          <a class="text-a menu">en</a>
+          <i class="icon-chevron-black"></i>
+        </li>
+      </ul>
+      
+      <!-- menu sidebar -->
+      <ul
+      class="sidebar-nav nav-1 hide-nav"
+      id="close"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="40px"
+    >
+      <label for="check" class="checkbtn" (click)="closeSideNav()">
+        <li><a class="icon-close"></a></li>
+      </label>
+      <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+      <li class="menu">
+        <a (click)="showSideNav()"class="text-a side-nav">Our Products</a>
+      </li>
+      <li class="menu">
+        <a routerLink="/about-us" class="text-a">About Us</a>
+      </li>
+      <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+      <li class="menu menu-news" >
+        <a routerLink="/news" class="text-a" (click)="newsMenu()">News</a>
+      </li>
+      <li class="menu">
+        <a routerLink="/contact-us" class="text-a">Contact Us</a>
+      </li>
+      <li class="menu"><a class="text-a menu">en</a></li>
+    </ul>
+
+      <ul
+        class="sidenav2 hide-nav nav-2"
+        id="close"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        fxLayoutGap="40px"
+      >
+        <label for="check" class="checkbtn" (click)="closeSideNav()">
+          <li><a class="icon-close"></a></li>
+        </label>
+        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+        <li class="menu">
+          <a class="text-a">Our Products</a>
+        </li>
+        
+        <li class="menu">
+         <a >
+          <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+              <div class="ip-rantai"></div>
+              <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
+                <div class="text-blue">RANTAI</div>
+                <button class="btn-mobile">LEARN MORE</button>
+              </div>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+              <div class="ip-nimbus"></div>
+              <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
+                <div class="text-blue">NIMBUS9</div>
+                <button class="btn-mobile">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+         </a>
+        </li>
+
+        <li class="menu">
+          <a routerLink="/about-us" class="text-a">About Us</a>
+        </li>
+        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+        <li class="menu menu-news" (click)="newsMenu()">
+          <a routerLink="/news" class="text-a">News</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/contact-us" class="text-a">Contact Us</a>
+        </li>
+        <li class="menu"><a class="text-a menu">en</a></li>
+      </ul>
+    </div>
+
+    <div class="header-content" fxLayout="row" fxLayoutAlign="center center">
+      <div
+        fxLayout="column"
+        fxLayoutAlign="start start"
+        fxLayoutGap="20px"
+        *ngIf="!careertext && !abouttext && !newstext"
+      >
+        <div class="content-1">WELCOME TO CYBERINDO SYNERGY SYSTEM</div>
+        <div class="content-2">Make Life Easier with Technology</div>
+        <div class="content-3">
+          We licensees & innovate for people with one consistent belief: There’s
+          Always a Way to Make Life Easier with Technology.
+        </div>
+      </div>
+      <ng-container *ngIf="careertext">
+        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+          <div class="content-1">{{ careertext.title }}</div>
+          <div class="content-2">{{ careertext.desc }}</div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="abouttext">
+        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+          <div class="content-1">{{ abouttext.title }}</div>
+          <div class="desc-about">{{ abouttext.desc }}</div>
+        </div>
+      </ng-container>
+
+      <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+        <ng-container *ngIf="newstext">
+          <div class="content-1">{{ newstext.highlight }}</div>
+          <div class="content-2">{{ newstext.date }}</div>
+          <div class="content-3">{{ newstext.title }}</div>
+          <div class="content-3">{{ newstext.hastag }}</div>
+          <div class="dot-container">
+            <div class="single-dot" (click)="click1()"></div>
+            <div class="single-dot" (click)="click2()"></div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="header2 hide">
+    <div class="body-header">
+      <div
+        id="nav"
+        class="nav nav-2"
+        fxLayout="row"
+        fxLayoutAlign="space-around center"
+      >
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i id="show" class="icon-crumb icon-toggle"></i>
+        </label>
+        <div class="icon-header-css">
+          <div class="logo3"></div>
+        </div>
+        <ul
+          id="close"
+          fxLayout="row"
+          fxLayoutAlign="start center"
+          fxLayoutGap="40px"
+        >
+          <label for="check" class="checkbtn">
+            <li><a class="icon-close"></a></li>
+          </label>
+          <li><a routerLink="/" class="active text-a">Home</a></li>
+          <li><a class="text-a" (click)="show()">Our Products</a></li>
+
+          
+
+          <li><a routerLink="/about-us" class="text-a">About Us</a></li>
+          <li><a routerLink="/career" class="text-a">Career</a></li>
+          <li><a routerLink="/news" class="text-a">News</a></li>
+          <li><a routerLink="/contact-us" class="text-a">Contact Us</a></li>
+          <li><a class="text-a">en</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Box Our Product  -->
+    <div class="set-box">
+      <div class="box-header">
+        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+          <div
+            class="set-iphone"
+            fxLayout="row"
+            fxLayoutAlign="start start"
+            fxLayoutGap="20px"
+          >
+            <div class="iphone-rantai"></div>
+            <div
+              fxLayout="column"
+              fxLayoutAlign="start start"
+              fxLayoutGap="10px"
+            >
+              <div class="text-rantai">RANTAI</div>
+              <div class="text-desc">
+                An All in one digital solution for business owners to run their
+                business. Control transaction from all online marketplace, watch
+                the growth of your businesses through desktop dashboard and
+                mobile application.
+              </div>
+              <button class="btn-learn">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="20px">
+            <div class="iphone-nimbus"></div>
+            <div
+              fxLayout="column"
+              fxLayoutAlign="start start"
+              fxLayoutGap="10px"
+            >
+              <div class="text-rantai">NIMBUS9</div>
+              <div class="text-desc">
+                A platform for companies on property management. from
+                operational to inquiries. Nimbus9 provides all in one solution
+                to help companies manage their property in more effective and
+                efficient way.
+              </div>
+              <button class="btn-learn">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

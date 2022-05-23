@@ -1,0 +1,360 @@
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (orientation: portrait){
+    .header-content{
+        position: relative;
+        left: 65px;
+    }
+    .content-1{
+        font-size: 12px !important;
+    }
+    .content-2{
+        font-size: 2rem !important;
+        line-height: 40px !important;
+    }
+    .content-3{
+        font-size: 1rem !important;
+        width: 330px !important;
+        line-height: 30px !important;
+    }
+    .logo2{
+        position: relative;
+        right: 90px;
+        width: 45% !important;
+    }
+    .desc-about{
+        font-size: 34px !important;
+        width: 444px;
+        line-height:50px !important;
+        padding-right: 190px;
+    }
+    
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
+    section{
+        height: 65vh !important;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width:1024px) and (orientation:portrait) {
+    section{
+        height: 56vh !important;
+    }
+}
+
+/* section 1 */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+section{   
+    background: linear-gradient(rgba(28, 28, 32, 0.4), rgba(28, 28, 32, 0.4), rgba(28, 28, 32, 0.4)), url("../../assets/images/businessman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 0%);
+    height: 100vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.sticky{
+    position: fixed !important;
+    width: 100%;
+    background-color: #ffffff;
+    height: 80px;
+    color: #212529 !important;
+    z-index: 100000; 
+    box-shadow: 5px 5px 5px #dad6d6;
+}
+.sticky-news{
+    position: fixed !important;
+    width: 100%;
+    background-color: #ffffff;
+    height: 80px;
+    color: #212529 !important;
+    z-index: 100000; 
+    box-shadow: 5px 5px 5px #dad6d6;
+}
+.sticky ul li a {
+    color: #000 !important;
+}
+.sticky-news ul li a {
+    color: #000 !important;
+}
+.nav{
+    position: sticky;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 100;
+    height: 80px;
+}
+.checkbtn{
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.icon-toggle{
+    content: url(../../assets/icon/icon-navbar.svg);
+    margin-left: -20px;
+}
+.toggle-black{
+    content: url(../../assets/images/list.svg);
+    width: 30px;
+    position: relative;
+    right: 20px;
+}
+.text-a{
+    color: #ffffff;
+    cursor: pointer;
+}
+.header-content{
+    color: #fff;
+    position: relative;
+    top: 130px;
+}
+.logo1{
+    position: relative;
+    bottom: 10px;
+    height: auto;
+    content: url(../../assets/icon/icon-header-css.svg);
+    margin: 20px 0px 0px 0px;
+}
+.logo2{
+    content: url(../../assets/logo/logo-css-foot.png);
+    // width: 15%;
+    width: 200px;
+    height: auto;
+}
+.logo3{
+    content: url(../../assets/logo/logo-css-foot.png);
+    width: 90%;
+    height: auto;
+}
+.content-1{
+    font-size: 1rem;
+}
+.content-2{
+    font-size: 3.75rem;
+    width: 444px;
+    line-height:60px;
+}
+.content-3{
+    font-size: 1.125rem;
+    width: 550px;
+    line-height:30px;
+}
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block;
+}
+/* end section 1 */
+
+
+// setting navbar toggle
+@media (max-width: 568px){
+    .sticky ul li{
+        display: block;
+        line-height: 20px;
+        margin: 20px 0px;
+    }
+    .checkbtn{
+        display:block;
+    }
+    a{
+        position: relative;
+        top: 80px;
+    }
+    .icon-close{
+        content: url(../../assets/icon-contact-us/icon-close.svg);
+        position: relative;
+        top: 10px;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height:100vh;
+        top: 0px;
+        left: -100%;
+        transition: all .8s; 
+        padding-left: 30px; 
+        display: block !important;
+    } 
+    .hide-menu{
+        left: -100% !important;
+    }
+    .icon-toggle{
+        left: 100%;
+    }
+    .nav ul li{
+        display: block;
+        line-height: 20px;
+        margin: 20px 0px;
+    }
+    .logo1{
+        margin: 10px 0px 0px 20px;
+        right: 90px;
+        width: 160px;
+    }
+    a{
+        color: #212529 !important;
+    }
+    a:hover{
+        color: #0082C8;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        border: 1px solid #ffffff;
+        width: 70%;
+        height: 100vh;
+        background-color: #ffffff;
+        border-radius: 20px 20px 20px 20px #212529;
+        z-index: 100000;
+    } 
+    .navbar1{
+        display: none !important;
+    }
+    .sidebar-nav{
+        display:block !important;
+    }
+}
+.sidebar-nav{
+    display:none ;
+}
+.header2{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 3px 3px 3px #dad6d6;
+}
+.hide {
+    top: -470px;
+}
+.show {
+    top: 0px;
+}
+.body-header{
+    background-color: #fff;
+}
+.body-header ul li a {
+    color: #000;
+}
+.set-box{
+    width: 100%;
+    position:relative;
+    left: calc(100% - 49%);
+    
+}
+.box-header{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    width:590px;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+.iphone-rantai{
+    content: url(../../assets/images/iphone-rantai.png);
+}
+.iphone-nimbus{
+    content: url(../../assets/images/iphone-nimbus.png);
+}
+.ip-rantai{
+    content: url(../../assets/images/iphone-rantai.png);
+    height: 70px;
+}
+.ip-nimbus{
+    content: url(../../assets/images/iphone-nimbus.png);
+    height: 70px;
+}
+.text-blue{
+    color: #0082C8;
+    font-size: 10px;
+    font-weight: bold;
+}
+.btn-mobile{
+    border: 1px solid #0082C8;
+    color: #0082C8;
+    background-color: #ffffff;
+    font-size: 8px;
+    border-radius: 4px;
+    padding: 3px;
+    width: 80px;
+}
+.set-iphone{
+    padding-top:20px;
+}
+.btn-learn{
+    font-size: 12px;
+    color: #0082C8;
+    width: 161px;
+    height: 42px;
+    border: 1px solid #0082C8;
+    border-radius: 4px;
+    opacity: 0.42;
+    background-color: #ffffff;
+}
+.text-rantai{
+    color: #0082C8;
+    font-size: 12px;
+}
+.text-desc{
+    color: #26272D;
+    font-size: 12px;
+}
+.line{
+    border: 1px solid #D4D4D4;
+    opacity: 1;
+    width: 400px;
+    position: relative;
+    left: 115px;
+}
+.desc-about{
+    font-size: 3.75rem;
+    width: 444px;
+    line-height:60px;
+}
+.dot-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.single-dot{
+    background: #eee;
+    height:16px;
+    width: 16px;
+    border-radius:50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 400ms;
+}
+.single-dot:active{
+    background:lightcoral;
+}
+.navbar2{
+    display:none !important;
+}
+
+.hide-nav { 
+    display: none !important;
+}
+.show-nav {
+    display: block !important;
+}
+.icon-chevron-black{
+    content: url(../../assets/icon/chevron-down-black.svg);
+    position: relative;
+    top: 4px;
+    left: 5px;
+    width: 10px;
+}

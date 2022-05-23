@@ -1,0 +1,197 @@
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (orientation: portrait){
+    // footer
+    .paralax-footer{
+        height: 135vh !important;
+    }
+    .need-more-foot{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .set-need-foot{
+        position: relative;
+        left: 60px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .need-information{
+        font-size: 22px !important;
+        position: relative;
+        right:0px;
+    }
+    .set-btn-foot{
+        display: flex;
+        justify-content: center !important;
+
+    }
+    .set-logo-css{
+        display: unset !important;
+    }
+    .logo-css-foot{
+        padding-left: 27px;
+    }
+    .content-footer{
+        padding-left: 27px;
+    }
+    .menu-foot{
+        padding-top: 30px;
+        padding-left: 27px;
+    }
+    .rantai-nimbus-foot{
+        padding-bottom: 10px;
+        position: relative;
+        top: 30px;
+        padding-left: 27px;
+    }
+    .set-follow-us{
+        display: unset !important;
+        padding-left: 27px;
+    }
+    .text-last-footer{
+       width: 65%;
+       text-align: center;
+    }
+    // end footer
+}
+
+@media only screen and (min-device-width: 390px) and (max-device-width:400px) and (orientation:portrait) {
+    .paralax-footer{
+        height: 130vh !important;
+    }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
+    .paralax-footer{
+        height: 84vh !important;
+        padding: 40px 30px !important;
+    }
+    .need-information{
+        font-size: 1.5rem !important;
+    }
+    .logo-rantai-foot {
+        position: relative;
+        left: 30px !important;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width:1024px) and (orientation:portrait) {
+    .paralax-footer{
+        height: 86vh !important;
+        padding: 40px 30px !important;
+    }
+    .logo-rantai-foot {
+        position: relative;
+        left: 30px !important;
+    }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
+    .paralax-footer{
+        height: 130vh !important;
+    }
+    .logo-rantai-foot {
+        position: relative;
+        left: 0px !important;
+    }
+}
+
+// section footer
+.paralax-footer{
+    background: linear-gradient(rgba(28, 28, 32, 0.9), rgba(28, 28, 32, 0.9), rgba(28, 28, 32, 0.9)), url("../../assets/images/foot-test.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 40px 0px 0px 0px; 
+}
+.need-information{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    padding-top: 10px;
+}
+.box-header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.btn-footer{
+    width: 264px;
+    height: 48px;
+    background-color: #0082C8;
+    border-radius: 4px;
+    opacity: 1;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border: 1px solid #1C1C20;;
+}
+.line-footer{
+    border: 1px solid #FFFFFF;
+    opacity: 0.13;
+    width: 84%;
+}
+.logo-css-foot{
+    width: 265px;
+    height: 67px;
+    content: url(../../assets/logo/logo-css-foot.png);
+}
+.content-footer{
+    color: #FFFFFF;
+    font-size: 1rem;
+    width: 340px;
+}
+.text-center-foot{
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+.logo-nimbus-foot{
+    width: 95px;
+    height: 35px;
+    content: url(../../assets/logo/logo-nimbus-footer.png);
+}
+.logo-rantai-foot{
+    width: 95px;
+    height: 28px;
+    content: url(../../assets/logo/logo-rantai-footer.png);
+}
+.follow-us{
+    font-size: 0.75rem;
+    color: #FFFFFF;
+}
+.icon-linkedin{
+    width: 24px;
+    height: 20px;
+    content: url(../../assets/icon/icon-linkedin-foot.png);
+}
+.icon-ig{
+    width: 20px;
+    height: 20px;
+    content: url(../../assets/icon/Icon-IG-foot.png);
+}
+.icon-fb{
+    width: 13px;
+    height: 20px;
+    content: url(../../assets/icon/Icon-FB-foot.png);
+}
+.text-last-footer{
+    color: #7C7F8F;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
+
+.button1{
+    border: 1px solid #0082C8;
+    border-radius: 8px;
+    background-color: #0082C8;
+    height: 42px;
+    width: 190px;
+    color: #ffffff;
+    position: relative;
+    top: 20px;
+    right: 25px;
+    bottom: 40px;
+    left: 15px;
+}
+.button2{
+    border: 1px solid #0082C8;
+}

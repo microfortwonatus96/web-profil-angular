@@ -1,0 +1,176 @@
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (orientation: portrait){
+    // footer
+    .need-more-foot{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .set-need-foot{
+        position: relative;
+        left: 60px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .need-information{
+        font-size: 24px !important;
+    }
+    .set-btn-foot{
+        display: flex;
+        justify-content: center !important;
+
+    }
+    .set-logo-css{
+        display: unset !important;
+    }
+    .logo-css-foot{
+        padding-left: 27px;
+    }
+    .content-footer{
+        padding-left: 27px;
+    }
+    .menu-foot{
+        padding-top: 30px;
+        padding-left: 27px;
+    }
+    .rantai-nimbus-foot{
+        padding-top: 30px;
+        padding-left: 27px;
+    }
+    .set-follow-us{
+        display: unset !important;
+        padding-left: 27px;
+    }
+    .text-last-footer{
+       width: 65%;
+       text-align: center;
+    }
+    // end footer
+}
+/******************************************Batas Media QUery*************************************************/
+
+.display-none{
+    display: none !important;
+}
+.display-block{
+    display: block;
+}
+
+/* section 1 */
+.img-header{   
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(50, 50, 50, 50), rgba(0, 0, 0, 0)), url("../../assets/images/businessman.png");
+    // background:  url("../../assets/images/businessman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 0%);
+    height: 100vh;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.header{
+    height: 80px;
+}
+.header-right{
+    color: #fff;
+    font-size: 0.875rem;
+}
+.header-right div{
+    cursor: pointer;
+}
+.header-content{
+    color: #fff;
+    padding-right: 230px;
+}
+.icon-header-css{
+    width: 15%;
+    height: 59px;
+    content: url(../../assets/icon/icon-header-css.svg);
+}
+.content-1{
+    font-size: 1rem;
+}
+.content-2{
+    font-size: 3.75rem;
+    width: 444px;
+    line-height:60px;
+}
+.content-3{
+    font-size: 1.125rem;
+    width: 550px;
+    line-height:30px;
+}
+/* end section 1 */
+
+// section footer
+.paralax-footer{
+    background-color: #1C1C20;
+    padding: 40px 0px 0px 0px;
+}
+.need-information{
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    padding-top: 10px;
+}
+.btn-footer{
+    width: 264px;
+    height: 48px;
+    background-color: #0082C8;
+    border-radius: 4px;
+    opacity: 1;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border: 1px solid #1C1C20;;
+}
+.line-footer{
+    border: 1px solid #FFFFFF;
+    opacity: 0.13;
+    width: 84%;
+}
+.logo-css-foot{
+    width: 265px;
+    height: 67px;
+    content: url(../../assets/logo/logo-css-foot.png);
+}
+.content-footer{
+    color: #FFFFFF;
+    font-size: 1rem;
+    width: 340px;
+}
+.text-center-foot{
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+.logo-nimbus-foot{
+    width: 95px;
+    height: 35px;
+    content: url(../../assets/logo/logo-nimbus-footer.png);
+}
+.logo-rantai-foot{
+    width: 95px;
+    height: 28px;
+    content: url(../../assets/logo/logo-rantai-footer.png);
+}
+.follow-us{
+    font-size: 0.75rem;
+    color: #FFFFFF;
+}
+.icon-linkedin{
+    width: 24px;
+    height: 20px;
+    content: url(../../assets/icon/icon-linkedin-foot.png);
+}
+.icon-ig{
+    width: 20px;
+    height: 20px;
+    content: url(../../assets/icon/Icon-IG-foot.png);
+}
+.icon-fb{
+    width: 13px;
+    height: 20px;
+    content: url(../../assets/icon/Icon-FB-foot.png);
+}
+.text-last-footer{
+    color: #7C7F8F;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
+

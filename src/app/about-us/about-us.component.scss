@@ -1,0 +1,649 @@
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) and (orientation: portrait){
+    .tabs{
+        display:flex;
+        justify-content: center;
+        flex-direction: column !important;
+    }
+    .title-tab{
+        width: 300px !important;
+    }
+    .overview{
+        padding-left: 30px !important;
+    }
+    .our-company{
+        padding-left: 30px !important;
+        font-size: 2rem !important;
+        position: relative;
+        top: -20px;
+    }
+    .content-s1{
+        width: 100% !important;
+        position: relative;
+        left: 30px;
+        position: relative;
+        top: -40px;
+    }
+    .img1-right-s1{
+        display: none;
+    }
+    .img2-right-s1{
+        display: none;
+    }
+    .img-left-s1{
+        width: 95% !important;
+        height: 100% !important;
+        position: relative;
+        left: 30px;
+        top: -40px;
+    }
+
+    .set-s2{
+        display: block !important;
+    }
+    .text-left-s2{
+        width: 100% !important;
+        font-size:1.5rem !important;
+        padding-bottom: 20px;
+    }
+    .text-right-s2{
+        width: 100% !important;
+        line-height:20px !important;
+        font-size: 1rem !important;
+    }
+    .set-s2{
+        padding: 0px 30px !important;
+    }
+    .set-all-box{
+        display: block !important;
+    }
+    .title-s3{
+        width: 100% !important;
+    }
+    .set-all-s3{
+        padding: 0px 30px !important;
+    }
+    .set-box-s3{
+        padding-top: 20px;
+    }
+    .set-box-s4{
+        position: relative;
+        bottom: 10px;
+    }
+    .set-leader{
+        display: block !important;
+    }
+    .the-leader{
+        font-size: 2rem !important;
+        width: 100% !important;
+    }
+    .set-img-s4{
+        text-align: center !important;
+        position: relative !important;
+        left: 40px !important;
+        padding-bottom: 10px;
+    }
+    .img-leader{
+        position: relative !important;
+        left: 65px !important;
+    }
+    .set-leader{
+        text-align: center !important;
+    }
+    .samuel{
+        padding-top: 20px;
+    }
+    .content-s4{
+        width: 100% !important;
+        padding: 0px 30px !important;
+    }
+    .img-employee{
+        width: 100% !important;
+        padding: 0px 30px !important;
+    }
+    .set-founder{
+        display: block !important;
+    }
+    .img-founder-nimbus{
+        width: 130px !important;
+    }
+    .img-founder-rantai{
+        width: 130px !important;
+    }
+    .img-co-founder-nimbus{
+        width: 130px !important;
+        padding-top: 20px;
+    }
+    .img-co-founder-rantai{
+        padding-top: 20px;
+        width: 130px !important;
+    }
+    .name-s4{
+        font-size: 14px !important;
+    }
+    .position{
+        font-size:11px !important;
+    }
+    .founder-text{
+        text-align: center !important;
+    }
+    .founder-set{
+        position: relative;
+        left: 25px;
+    }
+    .setiawan{
+        position: relative;
+        left: 25px;
+    }
+    .setiawan2{
+        position: relative;
+        left: 10px;
+    }
+    .steven2{
+        position: relative;
+        left: 20px;
+    }
+    .hendi{
+        position: relative;
+        left: 15px;
+    }
+    .hendi2{
+        position: relative;
+        left: 13px;
+    }
+    .hendi3{
+        position: relative;
+        left: 7px;
+    }
+    .thomas{
+        position: relative;
+        left: 10px;
+    }
+    .thomas2{
+        position: relative;
+        left: 10px;
+    }
+    .thomas3{
+        position: relative;
+        left: 5px;
+    }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
+    .title-tab{
+        width: 200px !important;
+    }
+    .content-s1{
+        position: relative;
+        left: 50px !important;
+        font-size: 14px !important;
+        width: 400px !important;
+    }
+    .img-left-s1{
+        width: 80% !important;
+        height: auto !important;
+        position: relative;
+        left: 50px !important;
+    }
+    .img2-right-s1{
+        width: 70% !important;
+        height: auto !important;
+        position: relative;
+        left: 30px !important;
+    }
+    .img1-right-s1{
+        width: 60% !important;
+        height: auto !important;
+        position: relative;
+        left: 30px !important;
+    }
+    .text-left-s2{
+        width: 90% !important;
+        font-size: 1rem !important;
+        line-height: 20px !important;
+    }
+    .text-right-s2{
+        width: 100% !important;
+        font-size: 1rem !important;
+        line-height: 20px !important;
+    }
+    .set-s2{
+        padding: 0px 30px !important;
+    }
+    .box-s3{
+        width: 150px !important;
+    }
+    .box-content-s3{
+        font-size: 12px !important;
+    }
+    .line{
+        width: 133px !important;
+    }
+    .box-title-s3{
+        font-size: 14px !important;
+    }
+    .paralax-section4{
+        margin-top: -150px !important;
+    }
+    .img-leader{
+        width: 110px !important;
+        position: relative;
+        left: -0px !important;
+    }
+    .img-founder-nimbus{
+        width: 110px !important;
+    }
+    .img-founder-rantai{
+        width: 110px !important;
+    }
+    .img-co-founder-nimbus{
+        width: 110px !important;
+    }
+    .img-co-founder-rantai{
+        width: 110px !important;
+    }
+    .content-s4{
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+    .name-s4{
+        font-size: 1rem !important;
+        padding-left: 25px !important;
+    }
+    .position{
+        font-size: 12px !important;
+        position: relative;
+        left: 25px !important;
+        text-align: center !important;
+    }
+    .set-leader{
+        position: relative;
+        right: 30px !important;
+        padding-top: 120px !important;
+    }
+    .the-leader{
+        font-size: 1.2rem !important;
+    }
+    .set-img-s4{
+        position: relative;
+        left: 100px !important;
+    }
+    .the-leader{
+        position: relative;
+        bottom: 30px !important;
+    }
+    .img-employee{
+        width: 90% !important;
+        height: auto !important;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width:1024px) and (orientation:portrait) {
+    .title-tab{
+        width: 240px !important;
+    }
+    .our-company{
+        position: relative;
+        left: 35px !important;
+    }
+    .overview{
+        position: relative;
+        left: 35px !important;
+    }
+    .content-s1{
+        position: relative;
+        left: 50px !important;
+        font-size: 14px !important;
+        width: 400px !important;
+    }
+    .img-left-s1{
+        width: 80% !important;
+        height: auto !important;
+        position: relative;
+        left: 50px !important;
+    }
+    .img2-right-s1{
+        width: 70% !important;
+        height: auto !important;
+        position: relative;
+        left: 30px !important;
+    }
+    .img1-right-s1{
+        width: 60% !important;
+        height: auto !important;
+        position: relative;
+        left: 30px !important;
+    }
+    .text-left-s2{
+        width: 90% !important;
+        font-size: 1rem !important;
+        line-height: 20px !important;
+    }
+    .text-right-s2{
+        width: 100% !important;
+        font-size: 1rem !important;
+        line-height: 20px !important;
+    }
+    .set-s2{
+        padding: 0px 30px !important;
+    }
+    .box-s3{
+        width: 150px !important;
+    }
+    .box-content-s3{
+        font-size: 12px !important;
+    }
+    .line{
+        width: 133px !important;
+    }
+    .box-title-s3{
+        font-size: 14px !important;
+    }
+    .paralax-section4{
+        margin-top: -150px !important;
+    }
+    .img-leader{
+        width: 110px !important;
+        position: relative;
+        left: -0px !important;
+    }
+    .img-founder-nimbus{
+        width: 110px !important;
+    }
+    .img-founder-rantai{
+        width: 110px !important;
+    }
+    .img-co-founder-nimbus{
+        width: 110px !important;
+    }
+    .img-co-founder-rantai{
+        width: 110px !important;
+    }
+    .content-s4{
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+    .name-s4{
+        font-size: 1rem !important;
+        padding-left: 25px !important;
+    }
+    .position{
+        font-size: 12px !important;
+        position: relative;
+        left: 25px !important;
+        text-align: center !important;
+    }
+    .set-leader{
+        position: relative;
+        right: 30px !important;
+        padding-top: 120px !important;
+    }
+    .the-leader{
+        font-size: 1.2rem !important;
+    }
+    .set-img-s4{
+        position: relative;
+        left: 100px !important;
+    }
+    .the-leader{
+        position: relative;
+        bottom: 30px !important;
+    }
+    .img-employee{
+        width: 90% !important;
+        height: auto !important;
+    }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
+    
+    .title-tab{
+        width: 340px !important;
+    }
+    .content-s1{
+        width: 100% !important;
+        position: relative;
+        left: 30px !important;
+    }
+    .box-s3{
+        width: 300px !important;
+    }
+    .box-title-s3{
+        font-size: 1rem !important;
+    }
+    .box-content-s3{
+        font-size: 1rem !important;
+    }
+    .line{
+        width: 100% !important;
+    }
+    .img-leader{
+        position: relative;
+        left: 130px !important;
+        width: 150px !important;
+        top: 100px !important;
+    }
+    .our-team{
+        position: relative;
+        right: 60px !important;
+        top: 120px !important;
+    }
+    .the-leader{
+        position: relative;
+        right: 60px !important;
+        top: 100px !important;
+    }
+    .img-founder-nimbus{
+        width: 150px !important;
+    }
+    .img-founder-rantai{
+        width: 150px !important;
+    }
+    .img-co-founder-nimbus{
+        width: 150px !important;
+    }
+    .img-co-founder-rantai{
+        width: 150px !important;
+    }
+    .set-leader{
+        position: relative;
+       left: 0px !important;
+    }
+    // .set-img-s4{
+    //     position: relative;
+    //     left: 70px !important;
+    // }
+    
+   
+}
+
+// section tab 
+.title-tab{
+    font-size: 1rem;
+    color: #091C34;
+    cursor: pointer;
+    border-bottom: 2px solid #D6D6D6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #ffffff;
+    width: 30vw;
+    padding: 10px;
+}
+.title-tab:hover{
+    border-bottom: 3px solid #0082C8;
+    color: #0082C8;
+}
+.paralax-tab{
+    padding: 20px 0px;
+}
+// end section tab 
+
+// paralax section 1
+.paralax-section1{
+    padding: 30px 0px;
+}
+.overview{
+    color: #0082C8;
+    font-size: 1rem;
+    padding-left: 95px;
+}
+.our-company{
+    color: #091C34;
+    font-size: 3rem;
+    padding-left: 95px;
+}
+.content-s1{
+    width: 585px;
+    color: #787878;
+    font-size: 1rem;
+}
+.img-left-s1{
+    width: 680px;
+    height: 374px;
+    content: url(../../assets/img-about-us/img-left-s1.png);
+}
+.icon-s1{
+    content: url(../../assets/icon-about-us/icon-play-s1.png);
+}
+.img1-right-s1{
+    width: 249px;
+    height: 249px;
+    content: url(../../assets/img-about-us/img1-right-s1.png);
+}
+.img2-right-s1{
+    width: 400px;
+    height: 240px;
+    content: url(../../assets/img-about-us/img2-right-s1.png);
+}
+// end paralax section 1
+
+// paralax section 2
+.paralax-section2{
+    background-color: #1C1C20;
+    padding: 40px 0px;
+}
+.title-s2{
+    color: #0082C8;
+    font-size: 1rem;
+}
+.text-left-s2{
+    color: #FFFFFF;
+    font-size: 2rem;
+    width: 540px;
+    line-height:40px;
+}
+.text-right-s2{
+    width: 540px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    line-height:30px;
+}
+// end paralax section 2
+
+// paralax section 3
+.paralax-section3{
+    background-color: #FFFFFF;
+    padding: 40px 0px;
+}
+.our-value{
+    font-size: 1rem;
+    color: #0082C8;
+}
+.title-s3{
+    width: 587px;
+    font-size: 2rem;
+    color: #091C34;
+    line-height:40px;
+}
+.box-s3{
+    width: 265px;
+    height: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #0000001F;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 10px;
+}
+.line{
+    width: 233px;
+    height: 0px;
+    border: 1px solid #D6D6D6;
+    opacity: 1;
+}
+.box-title-s3{
+    color: #0082C8;
+    font-size: 1rem;
+}
+.box-content-s3{
+    color: #787878;
+    font-size: 1rem;
+}
+// end paralax section 3
+
+// section 4
+.paralax-section4{
+    padding:40px 0px;
+}
+
+.our-team{
+    color: #0082C8;
+    font-size: 1rem;
+}
+.the-leader{
+    font-size: 3rem;
+    color: #091C34;
+    width: 172px;
+    line-height:50px;
+}
+.samuel{
+    color: #091C34;
+    font-size: 1.5rem;
+}
+.chief{
+    color: #0082C8;
+    font-size: 1rem;
+}
+.content-s4{
+    color: #787878;
+    font-size: 1rem;
+    width: 560px;
+}
+.img-leader{
+    position: relative;
+    left: 50px;
+    content: url(../../assets/img-about-us/the-leader.png);
+}
+.img-founder-nimbus{
+    content: url(../../assets/img-about-us/founder-nimbus.png);
+}
+.img-founder-rantai{
+    content: url(../../assets/img-about-us/founder-rantai.png);
+}
+.img-co-founder-nimbus{
+    content: url(../../assets/img-about-us/co-nimbus.png);
+}
+.img-co-founder-rantai{
+    content: url(../../assets/img-about-us/co-rantai.png);
+}
+.img-employee{
+    content: url(../../assets/img-about-us/employee.png);
+}
+.name-s4{
+    font-size: 1.5rem;
+    color: #091C34;
+}
+.position{
+    color: #0082C8;
+    font-size: 1rem;
+}
+// end paralax section 4
+.tab1{
+    position: sticky;
+    top: 80px;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    box-shadow: 5px 5px 5px #dad6d6;
+}
+
+
+
