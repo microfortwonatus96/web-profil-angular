@@ -6,7 +6,7 @@
       fxLayout="row"
       fxLayoutAlign="space-around center"
     >
-      <input type="checkbox" id="check"  (click)="openMenu()"/>
+      <input type="checkbox" id="check" (click)="openMenu()" />
       <label for="check" class="checkbtn test">
         <i id="showOne" class="icon-crumb icon-toggle"></i>
       </label>
@@ -32,9 +32,9 @@
         <li class="menu">
           <a routerLink="/about-us" class="text-a">About Us</a>
         </li>
-        <li class="menu"><a routerLink="/career" class="text-a" >Career</a></li>
-        <li class="menu menu-news" >
-          <a routerLink="/news" class="text-a" >News</a>
+        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+        <li class="menu menu-news">
+          <a routerLink="/news" class="text-a">News</a>
         </li>
         <li class="menu">
           <a routerLink="/contact-us" class="text-a">Contact Us</a>
@@ -44,34 +44,34 @@
           <i class="icon-chevron-black"></i>
         </li>
       </ul>
-      
+
       <!-- menu sidebar -->
       <ul
-      class="sidebar-nav nav-1 hide-nav"
-      id="close"
-      fxLayout="row"
-      fxLayoutAlign="start center"
-      fxLayoutGap="40px"
-    >
-      <label for="check" class="checkbtn" (click)="closeSideNav()">
-        <li><a class="icon-close"></a></li>
-      </label>
-      <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
-      <li class="menu">
-        <a (click)="showSideNav()"class="text-a side-nav">Our Products</a>
-      </li>
-      <li class="menu">
-        <a routerLink="/about-us" class="text-a">About Us</a>
-      </li>
-      <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
-      <li class="menu menu-news" >
-        <a routerLink="/news" class="text-a" (click)="newsMenu()">News</a>
-      </li>
-      <li class="menu">
-        <a routerLink="/contact-us" class="text-a">Contact Us</a>
-      </li>
-      <li class="menu"><a class="text-a menu">en</a></li>
-    </ul>
+        class="sidebar-nav nav-1 hide-nav"
+        id="close"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        fxLayoutGap="40px"
+      >
+        <label for="check" class="checkbtn" (click)="closeSideNav()">
+          <li><a class="icon-close"></a></li>
+        </label>
+        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+        <li class="menu">
+          <a (click)="showSideNav()" class="text-a side-nav">Our Products</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/about-us" class="text-a">About Us</a>
+        </li>
+        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+        <li class="menu">
+          <a routerLink="/news" class="text-a" (click)="newsMenu()">News</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/contact-us" class="text-a">Contact Us</a>
+        </li>
+        <li class="menu"><a class="text-a menu">en</a></li>
+      </ul>
 
       <ul
         class="sidenav2 hide-nav nav-2"
@@ -87,34 +87,54 @@
         <li class="menu">
           <a class="text-a">Our Products</a>
         </li>
-        
-        <li class="menu">
-         <a >
-          <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
-            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
-              <div class="ip-rantai"></div>
-              <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
-                <div class="text-blue">RANTAI</div>
-                <button class="btn-mobile">LEARN MORE</button>
-              </div>
-            </div>
 
-            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
-              <div class="ip-nimbus"></div>
-              <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
-                <div class="text-blue">NIMBUS9</div>
-                <button class="btn-mobile">LEARN MORE</button>
+        <li class="menu">
+          <a>
+            <div
+              fxLayout="column"
+              fxLayoutAlign="start start"
+              fxLayoutGap="20px"
+            >
+              <div
+                fxLayout="row"
+                fxLayoutAlign="start center"
+                fxLayoutGap="20px"
+              >
+                <div class="ip-rantai"></div>
+                <div
+                  fxLayout="column"
+                  fxLayoutAlign="start start"
+                  fxLayoutGap="5px"
+                >
+                  <div class="text-blue">RANTAI</div>
+                  <button class="btn-mobile">LEARN MORE</button>
+                </div>
+              </div>
+
+              <div
+                fxLayout="row"
+                fxLayoutAlign="start center"
+                fxLayoutGap="20px"
+              >
+                <div class="ip-nimbus"></div>
+                <div
+                  fxLayout="column"
+                  fxLayoutAlign="start start"
+                  fxLayoutGap="5px"
+                >
+                  <div class="text-blue">NIMBUS9</div>
+                  <button class="btn-mobile">LEARN MORE</button>
+                </div>
               </div>
             </div>
-          </div>
-         </a>
+          </a>
         </li>
 
         <li class="menu">
           <a routerLink="/about-us" class="text-a">About Us</a>
         </li>
         <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
-        <li class="menu menu-news" (click)="newsMenu()">
+        <li class="menu" (click)="newsMenu()">
           <a routerLink="/news" class="text-a">News</a>
         </li>
         <li class="menu">
@@ -192,8 +212,6 @@
           </label>
           <li><a routerLink="/" class="active text-a">Home</a></li>
           <li><a class="text-a" (click)="show()">Our Products</a></li>
-
-          
 
           <li><a routerLink="/about-us" class="text-a">About Us</a></li>
           <li><a routerLink="/career" class="text-a">Career</a></li>
