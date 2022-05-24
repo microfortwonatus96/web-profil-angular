@@ -254,7 +254,7 @@ section{
     width: 100%;
     position:relative;
     left: calc(100% - 49%);
-    
+    margin-top: 2px;
 }
 .box-header{
     background-color: #ffffff;
@@ -262,6 +262,7 @@ section{
     width:590px;
     padding-left: 40px;
     padding-right: 10px;
+    box-shadow: 5px 5px 5px #dad6d6;
 }
 .iphone-rantai{
     content: url(../../assets/images/iphone-rantai.png);
