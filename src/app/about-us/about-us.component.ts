@@ -10,41 +10,38 @@ declare var $: any;
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  styleUrls: ['./about-us.component.scss'],
 })
-export class AboutUsComponent implements OnInit, AfterViewInit{
-  aboutHeader:any = {
+export class AboutUsComponent implements OnInit, AfterViewInit {
+  aboutHeader: any = {
     title: 'ABOUT US',
-    desc: 'Lorem Ipsum Dolor Sit Amet'
-  }
+    desc: 'Lorem Ipsum Dolor Sit Amet',
+  };
 
   @Input() about = false;
-  constructor(
-    private router: Router,
-  ) { 
-    this.loadNavSticky();
+  constructor(private router: Router) {
+    // this.loadNavSticky();
   }
-ngAfterViewInit(){
-  $('html, body').animate(
-    {
-      scrollTop: 0,
-    },
-    'slow'
-  );
-  this.loadNavSticky()
-}
+  ngAfterViewInit() {
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      'slow'
+    );
+    // this.loadNavSticky();
+  }
   ngOnInit(): void {
- 
     this.loadNavSticky();
+    this.pageNews();
   }
-  loadNavSticky(){
+  loadNavSticky() {
     let scrol = document.querySelector('.mat-typography');
     // let news = document.querySelector('#nav');
     // news?.classList.remove('sticky-news');
     (<HTMLElement>scrol).addEventListener(
       'scroll',
       function () {
-        console.log('about')
         const scrolled = Math.floor((<HTMLElement>scrol).scrollTop);
         let header = document.querySelector('#nav');
         let icon = document.querySelector('.icon-header-css');
@@ -58,19 +55,25 @@ ngAfterViewInit(){
           (<HTMLElement>icon).classList.remove('logo1');
           (<HTMLElement>tabs).classList.add('tab1');
           toggle?.classList.add('toggle-black');
-          toggle?.classList.remove('icon-toggle'); 
+          toggle?.classList.remove('icon-toggle');
         } else {
           if (!header || !icon || !tabs) return;
+          let stateNews = localStorage.getItem('news');
           (<HTMLElement>header).classList.remove('sticky');
           (<HTMLElement>header).classList.add('nav');
-          (<HTMLElement>icon).classList.remove('logo2');
-          (<HTMLElement>icon).classList.add('logo1');
+          if (stateNews !== 'true') {
+            (<HTMLElement>icon).classList.remove('logo2');
+            (<HTMLElement>icon).classList.add('logo1');
+            toggle?.classList.remove('toggle-black');
+            toggle?.classList.add('icon-toggle');
+          }
           (<HTMLElement>tabs).classList.remove('tab1');
-          toggle?.classList.remove('toggle-black');
-          toggle?.classList.add('icon-toggle'); 
         }
       },
       false
     );
+  }
+  pageNews(event?: any) {
+    localStorage.setItem('news', event);
   }
 }

@@ -1,8 +1,9 @@
-<section id="home" class="section1 home">
+<section id="home" class="home" [class.section1]="!newsSection">
   <div>
     <div
       id="nav"
-      class="nav nav-2"
+      class="nav-2"
+      [ngClass]="!newsSection ? 'nav' : 'sticky-news'"
       fxLayout="row"
       fxLayoutAlign="space-around center"
     >
@@ -11,7 +12,7 @@
         <i id="showOne" class="icon-crumb icon-toggle"></i>
       </label>
       <div class="icon-header-css">
-        <div class="logo1"></div>
+        <div [ngClass]="!newsSection ? 'logo1' : 'logo2'"></div>
       </div>
 
       <ul
@@ -33,8 +34,8 @@
           <a routerLink="/about-us" class="text-a">About Us</a>
         </li>
         <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
-        <li class="menu menu-news">
-          <a routerLink="/news" class="text-a">News</a>
+        <li class="menu">
+          <a routerLink="/news" class="text-a" (click)="pageNews(true)">News</a>
         </li>
         <li class="menu">
           <a routerLink="/contact-us" class="text-a">Contact Us</a>
@@ -260,72 +261,72 @@
 </section>
 
 <!-- section 2 -->
-<section id="home2" class="home2">
+<!-- <section id="home2" class="home2">
   <div
-      id="nav"
-      class="sticky-news nav-2 "
-      fxLayout="row"
-      fxLayoutAlign="space-around center"
-    >
-      <input type="checkbox" id="check" (click)="openMenu()" />
-      <label for="check" class="checkbtn test">
-        <i id="showOne" class="icon-crumb toggle-black"></i>
-      </label>
-      <div class="icon-header-css">
-        <div class="logo2"></div>
-      </div>
+    id="nav"
+    class="sticky-news nav-2"
+    fxLayout="row"
+    fxLayoutAlign="space-around center"
+  >
+    <input type="checkbox" id="check" (click)="openMenu()" />
+    <label for="check" class="checkbtn test">
+      <i id="showOne" class="icon-crumb toggle-black"></i>
+    </label>
+    <div class="icon-header-css">
+      <div class="logo2"></div>
+    </div>
     <ul
-        class="navbar1 nav-1 sidebar-nav"
-        id="close"
-        fxLayout="row"
-        fxLayoutAlign="start center"
-        fxLayoutGap="40px"
-      >
-        <label for="check" class="checkbtn" (click)="closeSideNav()">
-          <li><a class="icon-close"></a></li>
-        </label>
-        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
-        <li class="menu" >
-          <a (click)="show()" class="text-a">Our Products</a>
-        </li>
-        <li class="menu">
-          <a routerLink="/about-us" class="text-a">About Us</a>
-        </li>
-        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
-        <li class="menu" (click)="newsMenu()">
-          <a routerLink="/news" class="text-a">News</a>
-        </li>
-        <li class="menu">
-          <a routerLink="/contact-us" class="text-a">Contact Us</a>
-        </li>
-        <li class="menu"><a class="text-a menu">en</a></li>
-      </ul>
-      
-      <ul
-        class="sidebar-nav nav-1 hide-nav"
-        id="close"
-        fxLayout="row"
-        fxLayoutAlign="start center"
-        fxLayoutGap="40px"
-      >
-        <label for="check" class="checkbtn" (click)="closeSideNav()">
-          <li><a class="icon-close"></a></li>
-        </label>
-        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
-        <li class="menu">
-          <a (click)="showSideNav()" class="text-a side-nav">Our Products</a>
-        </li>
-        <li class="menu">
-          <a routerLink="/about-us" class="text-a">About Us</a>
-        </li>
-        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
-        <li class="menu">
-          <a routerLink="/news" class="text-a" (click)="newsMenu()">News</a>
-        </li>
-        <li class="menu">
-          <a routerLink="/contact-us" class="text-a">Contact Us</a>
-        </li>
-        <li class="menu"><a class="text-a menu">en</a></li>
-      </ul>
+      class="navbar1 nav-1 sidebar-nav"
+      id="close"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="40px"
+    >
+      <label for="check" class="checkbtn" (click)="closeSideNav()">
+        <li><a class="icon-close"></a></li>
+      </label>
+      <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+      <li class="menu">
+        <a (click)="show()" class="text-a">Our Products</a>
+      </li>
+      <li class="menu">
+        <a routerLink="/about-us" class="text-a">About Us</a>
+      </li>
+      <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+      <li class="menu" (click)="newsMenu()">
+        <a routerLink="/news" class="text-a">News</a>
+      </li>
+      <li class="menu">
+        <a routerLink="/contact-us" class="text-a">Contact Us</a>
+      </li>
+      <li class="menu"><a class="text-a menu">en</a></li>
+    </ul>
+
+    <ul
+      class="sidebar-nav nav-1 hide-nav"
+      id="close"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="40px"
+    >
+      <label for="check" class="checkbtn" (click)="closeSideNav()">
+        <li><a class="icon-close"></a></li>
+      </label>
+      <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+      <li class="menu">
+        <a (click)="showSideNav()" class="text-a side-nav">Our Products</a>
+      </li>
+      <li class="menu">
+        <a routerLink="/about-us" class="text-a">About Us</a>
+      </li>
+      <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+      <li class="menu">
+        <a routerLink="/news" class="text-a" (click)="newsMenu()">News</a>
+      </li>
+      <li class="menu">
+        <a routerLink="/contact-us" class="text-a">Contact Us</a>
+      </li>
+      <li class="menu"><a class="text-a menu">en</a></li>
+    </ul>
   </div>
-</section>
+</section> -->

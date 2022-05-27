@@ -6,6 +6,7 @@ import {
   Inject,
   Input,
   Output,
+  EventEmitter,
 } from '@angular/core';
 import {
   ActivatedRoute,
@@ -26,9 +27,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @Input() careertext: any;
   @Input() abouttext: any;
   @Input() newstext: any;
+  @Input() newsSection: any;
+  @Output() stateNews: EventEmitter<any> = new EventEmitter();
 
   slider1 = true;
   slider2 = false;
+  sectionNews: boolean = false;
 
   constructor(
     private router: Router,
@@ -45,7 +49,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       sideNav?.classList.add('show-nav');
       sideNav?.classList.remove('hide-nav');
     });
-
+    this.stateNews.emit(this.sectionNews);
     // action news
   }
   newsMenu() {
@@ -66,19 +70,18 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
     let slider1 = document.querySelector('.paralax-section1');
     let slider2 = document.querySelector('.paralax-section2');
-    let headNews = document.querySelector('.paralax-news')
+    let headNews = document.querySelector('.paralax-news');
     slider1?.classList.add('display-block');
-      slider1?.classList.remove('display-none');
-      slider2?.classList.remove('display-block');
-      slider2?.classList.add('display-none');
+    slider1?.classList.remove('display-none');
+    slider2?.classList.remove('display-block');
+    slider2?.classList.add('display-none');
     headNews?.classList.remove('display-none');
-      headNews?.classList.add('display-block');
+    headNews?.classList.add('display-block');
   }
   openMenu() {
     let sideNav = document.querySelector('.sidebar-nav');
     sideNav?.classList.add('show-nav');
     sideNav?.classList.remove('hide-nav');
-    
   }
   closeSideNav() {
     let sideNav = document.querySelector('.sidebar-nav');
@@ -94,7 +97,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   loadHeader() {
     let scrol = document.querySelector('.mat-typography');
     let header = document.querySelector('#nav');
-   
+
     let news = document.querySelector('.sticky-news');
 
     if (news) return;
@@ -105,15 +108,14 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         let toggle = document.querySelector('.icon-crumb');
         let menu = document.querySelector('.menu');
         const scrolled = (<HTMLElement>scrol).scrollTop;
-        
+
         if (scrolled > 710) {
           (<HTMLElement>header).classList.remove('nav');
           (<HTMLElement>header).classList.add('sticky');
 
           (<HTMLElement>icon).classList.add('logo2');
           (<HTMLElement>icon).classList.remove('logo1');
-        
-         
+
           (<HTMLElement>toggle).classList.add('toggle-black');
           (<HTMLElement>toggle).classList.remove('icon-toggle');
         } else {
@@ -177,5 +179,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       slider1?.classList.add('display-none');
       slider2?.classList.add('display-block');
     }
+  }
+  pageNews(val: any) {
+    this.sectionNews = val;
+    this.stateNews.emit(this.sectionNews);
   }
 }

@@ -1,4 +1,7 @@
-<app-header [abouttext]="aboutHeader"></app-header>
+<app-header
+  [abouttext]="aboutHeader"
+  (stateNews)="pageNews($event)"
+></app-header>
 
 <section id="tabsNav" class="paralax-tab">
   <div class="tabs" fxLayout="row" fxLayoutAlign="center center">
@@ -289,11 +292,21 @@
         </div>
       </div>
     </div>
-    <div class="set-founder" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutGap="50px">
-      <div class="founder-set" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="50px">
+    <div
+      class="set-founder"
+      fxLayout="row"
+      fxLayoutAlign="center stretch"
+      fxLayoutGap="50px"
+    >
+      <div
+        class="founder-set"
+        fxLayout="row"
+        fxLayoutAlign="start stretch"
+        fxLayoutGap="50px"
+      >
         <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
           <div class="img-founder-nimbus"></div>
-          <div  fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+          <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
             <div class="name-s4 setiawan">Setiawan</div>
             <div class="position setiawan2">Founder Nimbus9</div>
             <div class="position">Chief Operating Officer</div>
@@ -308,8 +321,13 @@
           </div>
         </div>
       </div>
-      
-      <div class="founder-set" fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="50px">
+
+      <div
+        class="founder-set"
+        fxLayout="row"
+        fxLayoutAlign="start stretch"
+        fxLayoutGap="50px"
+      >
         <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
           <div class="img-co-founder-nimbus"></div>
           <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">

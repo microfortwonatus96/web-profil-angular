@@ -18,8 +18,7 @@ export class CareerComponent implements OnInit {
     desc: 'Join Us and Lets Grow Together',
   };
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
   ngOnInit(): void {
     $('html, body').animate(
       {
@@ -27,7 +26,7 @@ export class CareerComponent implements OnInit {
       },
       'slow'
     );
-    
+
     this.loadNavSticky();
 
     let openSideNav = document.querySelector('.test');
@@ -50,31 +49,36 @@ export class CareerComponent implements OnInit {
         let tabs = document.querySelector('#tabsNav');
         let toggle = document.querySelector('.icon-crumb');
         let news = document.querySelector('.sticky-news');
-      
-        if (scrolled > 615) {   
+
+        if (scrolled > 615) {
           // news?.classList.add('#home');
-          
+
           (<HTMLElement>toggle).classList.remove('icon-toggle');
           (<HTMLElement>toggle).classList.add('toggle-black');
           (<HTMLElement>header).classList.remove('nav');
           (<HTMLElement>header).classList.add('sticky');
           (<HTMLElement>icon).classList.add('logo2');
           (<HTMLElement>icon).classList.remove('logo1');
-          if(!tabs) return
+          if (!tabs) return;
           (<HTMLElement>tabs).classList.add('tab1');
         } else {
+          let stateNews = localStorage.getItem('news');
           (<HTMLElement>header).classList.remove('sticky');
           (<HTMLElement>header).classList.add('nav');
-          (<HTMLElement>icon).classList.remove('logo2');
-          (<HTMLElement>icon).classList.add('logo1'); 
-          
-          toggle?.classList.remove('toggle-black');
-          toggle?.classList.add('icon-toggle');
-          if(!tabs) return
+          if (stateNews !== 'true') {
+            (<HTMLElement>icon).classList.remove('logo2');
+            (<HTMLElement>icon).classList.add('logo1');
+            toggle?.classList.remove('toggle-black');
+            toggle?.classList.add('icon-toggle');
+          }
+          if (!tabs) return;
           (<HTMLElement>tabs).classList.remove('tab1');
         }
       },
       false
     );
+  }
+  pageNews(event?: any) {
+    localStorage.setItem('news', event);
   }
 }

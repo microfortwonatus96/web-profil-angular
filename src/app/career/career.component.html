@@ -1,4 +1,4 @@
-<app-header [careertext]="career"></app-header>
+<app-header [careertext]="career" (stateNews)="pageNews($event)"></app-header>
 
 <section class="paralax-section1">
   <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
@@ -7,15 +7,20 @@
       building a dynamic work environment that push each of our employees to
       grow together and compliment each other.
     </div>
-    <div class="set-img1" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+    <div
+      class="set-img1"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      fxLayoutGap="30px"
+    >
       <div class="img-s1">fsbfnfsn mik</div>
       <div fxLayout="column" fxlayoutAlign="start stretch" fxLayoutGap="20px">
         <div class="join-us">JOIN US</div>
         <div class="title-right-s1">
-          Be Part of <br/>
+          Be Part of <br />
           Our Vision & Mission
         </div>
-        
+
         <div class="content2-s1">
           CSS is a team with one vision: to keep innovating and provide solution
           fo people, businesses and companies. We’re a team of unique
@@ -37,8 +42,18 @@
         CSS support each of the employees to grows the best version of
         themselves by providing the best resource and support.
       </div>
-      <div class="set-icon" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="170px">
-        <div class="set-icon1" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="20px">
+      <div
+        class="set-icon"
+        fxLayout="row"
+        fxLayoutAlign="center center"
+        fxLayoutGap="170px"
+      >
+        <div
+          class="set-icon1"
+          fxLayout="column"
+          fxLayoutAlign="start stretch"
+          fxLayoutGap="20px"
+        >
           <div
             fxLayout="column"
             fxLayoutAlign="start stretch"
@@ -56,7 +71,12 @@
             <div class="name-s2">Benefit 4 Lorem Ipsum</div>
           </div>
         </div>
-        <div class="set-icon1" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="20px">
+        <div
+          class="set-icon1"
+          fxLayout="column"
+          fxLayoutAlign="start stretch"
+          fxLayoutGap="20px"
+        >
           <div
             fxLayout="column"
             fxLayoutAlign="start stretch"
@@ -98,7 +118,12 @@
 </section>
 
 <section class="paralax-section3">
-  <div class="set-s3" fxLayout="row" fxLayoutAlign="center stretch" fxLayoutGap="50px">
+  <div
+    class="set-s3"
+    fxLayout="row"
+    fxLayoutAlign="center stretch"
+    fxLayoutGap="50px"
+  >
     <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="20px">
       <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="10px">
         <div class="current">CURRENT OPEN POSITIONS</div>
@@ -175,7 +200,7 @@
           <div class="learn-more">LEARN MORE</div>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
   <div class="set-btn" fxLayout="row" fxLayoutAlign="center center">
     <a href="#" target="_blank">
