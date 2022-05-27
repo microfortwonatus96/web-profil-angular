@@ -13,7 +13,6 @@ declare var $: any;
   styleUrls: ['./career.component.scss'],
 })
 export class CareerComponent implements OnInit {
-  stateHeader: any = false;
   career: any = {
     title: 'CAREER',
     desc: 'Join Us and Lets Grow Together',
@@ -47,27 +46,32 @@ export class CareerComponent implements OnInit {
         const scrolled = Math.round((<HTMLElement>scrol).scrollTop);
 
         let header = document.querySelector('#nav');
-        console.log(header);
         let icon = document.querySelector('.icon-header-css');
         let tabs = document.querySelector('#tabsNav');
         let toggle = document.querySelector('.icon-crumb');
         let news = document.querySelector('.sticky-news');
-        if (scrolled >= 615) {   
+      
+        if (scrolled > 615) {   
+          // news?.classList.add('#home');
+          
+          (<HTMLElement>toggle).classList.remove('icon-toggle');
+          (<HTMLElement>toggle).classList.add('toggle-black');
           (<HTMLElement>header).classList.remove('nav');
           (<HTMLElement>header).classList.add('sticky');
           (<HTMLElement>icon).classList.add('logo2');
           (<HTMLElement>icon).classList.remove('logo1');
+          if(!tabs) return
           (<HTMLElement>tabs).classList.add('tab1');
-          toggle?.classList.add('toggle-black');
-          toggle?.classList.remove('icon-toggle');
         } else {
           (<HTMLElement>header).classList.remove('sticky');
           (<HTMLElement>header).classList.add('nav');
           (<HTMLElement>icon).classList.remove('logo2');
           (<HTMLElement>icon).classList.add('logo1'); 
-          (<HTMLElement>tabs).classList.remove('tab1');
+          
           toggle?.classList.remove('toggle-black');
           toggle?.classList.add('icon-toggle');
+          if(!tabs) return
+          (<HTMLElement>tabs).classList.remove('tab1');
         }
       },
       false

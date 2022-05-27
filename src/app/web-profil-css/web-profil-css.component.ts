@@ -54,6 +54,8 @@ export class WebProfilCssComponent implements OnInit,AfterViewInit {
    
     let toggle = document.querySelector('.checkbtn');
     let news  = document.querySelector('.sticky-news');
+
+    // console.log('klik', toggle);
      if(scrolled >= 615){
       if(!header || !icon || !toggle)return
       (<HTMLElement>header).classList.remove('nav');
@@ -62,6 +64,8 @@ export class WebProfilCssComponent implements OnInit,AfterViewInit {
       (<HTMLElement>icon).classList.remove('logo1');
       (<HTMLElement>toggle).classList.add('toggle-black');
       (<HTMLElement>toggle).classList.remove('icon-toggle');
+      // console.log('klik', toggle);
+      
      }else{
       (<HTMLElement>header).classList.remove('sticky');
       (<HTMLElement>header).classList.add('nav');

@@ -90,16 +90,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       sideNav?.classList.remove('show-nav');
     }, 100);
   }
-  
-  closeHeader(){
-    // let s = document.querySelector('.menu-news');
-    // // console.log(s)
-    // s?.addEventListener('click', function(){
-    //   // alert('ok')
-    //   s?.classList.remove('.home');
-    //   s?.classList.add('.home2');
-    // })
-  }
 
   loadHeader() {
     let scrol = document.querySelector('.mat-typography');
@@ -115,12 +105,14 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         let toggle = document.querySelector('.icon-crumb');
         let menu = document.querySelector('.menu');
         const scrolled = (<HTMLElement>scrol).scrollTop;
+        
         if (scrolled > 710) {
           (<HTMLElement>header).classList.remove('nav');
           (<HTMLElement>header).classList.add('sticky');
 
           (<HTMLElement>icon).classList.add('logo2');
           (<HTMLElement>icon).classList.remove('logo1');
+        
          
           (<HTMLElement>toggle).classList.add('toggle-black');
           (<HTMLElement>toggle).classList.remove('icon-toggle');
@@ -158,7 +150,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     sideNav2?.classList.add('show-nav');
     sideNav2?.classList.remove('hide-nav');
   }
-
   click1() {
     let sld1 = document.querySelector('.display-block');
     let slider1 = document.querySelector('.paralax-section1');
