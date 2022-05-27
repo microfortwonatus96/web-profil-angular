@@ -1,5 +1,25 @@
-
 <app-header [newstext]="newsHeader"></app-header>
+
+<section class="paralax-news">
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <div fxLayout="row" fxLayoutAlign="start" class="img-b">
+      <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
+        <ng-container>
+          <div class="">HIGHLIGHTS</div>
+          <div class="">00 October 2021</div>
+          <div class="">
+            This is Highlight News Title Lorem Ipsum Dolor Sit Amet
+          </div>
+          <div class="">#Technology #Finance #hashtag3 #hashtag4</div>
+          <div class="dot-container">
+            <div class="single-dot" (click)="click1()"></div>
+            <div class="single-dot" (click)="click2()"></div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="paralax-section1 slider1">
   <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
@@ -130,11 +150,6 @@
     </div>
   </div>
 </section>
-
-<!-- <div class="dot-container">
-  <div (click)="click2()" class="single-dot"></div>
-  <div (click)="click1()" class="single-dot"></div> 
-</div> -->
 
 <!-- section slider -->
 <section class="paralax-section2 slider2">
@@ -336,4 +351,3 @@
 <!-- end section slider -->
 
 <app-footer></app-footer>
-

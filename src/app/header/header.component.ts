@@ -63,11 +63,22 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     let sideNav = document.querySelector('.sidebar-nav');
     sideNav?.classList.remove('show-nav');
     sideNav?.classList.add('hide-nav');
+
+    let slider1 = document.querySelector('.paralax-section1');
+    let slider2 = document.querySelector('.paralax-section2');
+    let headNews = document.querySelector('.paralax-news')
+    slider1?.classList.add('display-block');
+      slider1?.classList.remove('display-none');
+      slider2?.classList.remove('display-block');
+      slider2?.classList.add('display-none');
+    headNews?.classList.remove('display-none');
+      headNews?.classList.add('display-block');
   }
   openMenu() {
     let sideNav = document.querySelector('.sidebar-nav');
     sideNav?.classList.add('show-nav');
     sideNav?.classList.remove('hide-nav');
+    
   }
   closeSideNav() {
     let sideNav = document.querySelector('.sidebar-nav');
@@ -79,16 +90,28 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       sideNav?.classList.remove('show-nav');
     }, 100);
   }
+  
+  closeHeader(){
+    // let s = document.querySelector('.menu-news');
+    // // console.log(s)
+    // s?.addEventListener('click', function(){
+    //   // alert('ok')
+    //   s?.classList.remove('.home');
+    //   s?.classList.add('.home2');
+    // })
+  }
+
   loadHeader() {
     let scrol = document.querySelector('.mat-typography');
     let header = document.querySelector('#nav');
-    let icon = document.querySelector('.icon-header-css');
+   
     let news = document.querySelector('.sticky-news');
 
     if (news) return;
     (<HTMLElement>scrol).addEventListener(
       'scroll',
       function () {
+        let icon = document.querySelector('.icon-header-css');
         let toggle = document.querySelector('.icon-crumb');
         let menu = document.querySelector('.menu');
         const scrolled = (<HTMLElement>scrol).scrollTop;
@@ -98,7 +121,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
           (<HTMLElement>icon).classList.add('logo2');
           (<HTMLElement>icon).classList.remove('logo1');
-
+         
           (<HTMLElement>toggle).classList.add('toggle-black');
           (<HTMLElement>toggle).classList.remove('icon-toggle');
         } else {

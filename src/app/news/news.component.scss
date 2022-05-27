@@ -26,6 +26,9 @@
         width: 105% !important;
         height: auto !important;
     }
+    .img-b{
+        width: 320px !important;
+    }
     .content-left-slider{
         width: 100% !important;
     }
@@ -64,6 +67,9 @@
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait){
+    .img-b{
+        width: 720px !important;
+    }
     .line {
         width: 600px !important;
     }
@@ -105,6 +111,15 @@
 }
 
 @media only screen and (min-device-width: 769px) and (max-device-width:1024px) and (orientation:portrait){
+    .paralax-news{
+        margin-top: -550px !important;
+    }
+    .slider2{
+        margin-top: -580px !important;
+    }
+    .img-b{
+        width: 720px !important;
+    }
     .line {
         width: 600px !important;
     }
@@ -146,6 +161,12 @@
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait){
+    .paralax-news{
+        margin-top: 100px !important;
+    }
+    .slider2{
+        margin-top: 80px !important;
+    }
     .line {
         width: 240px !important;
     }
@@ -159,6 +180,9 @@
     .img-a {
         width: 350px !important;
         height: 200px !important;
+    }
+    .img-b {
+        width: 350px !important;
     }
     .content-left-slider {
         width: 350px !important;
@@ -244,6 +268,17 @@
     height: 360px;
     color: #ffffff;
 }
+.img-b{
+    background: linear-gradient(rgba(28, 28, 32, 0.4), rgba(28, 28, 32, 0.4), rgba(28, 28, 32, 0.4)), url("../../assets/img-news/img-a.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1120px;
+    height: 360px;
+    color: #ffffff;
+    margin: 20px 0px;
+    padding: 40px 0px 0px 40px;
+}
 .date-img{
     font-size: 1rem;
     padding-left: 50px;
@@ -325,16 +360,19 @@
     margin: 20px 0;
 }
 .single-dot{
-    background: #000;
+    background: #424141;
     height:16px;
     width: 16px;
+    border: 1px solid #fff;
     border-radius:50%;
     margin: 0 8px;
     cursor: pointer;
     transition: 400ms;
+    position: relative;
+    top: 30px;
 }
 .single-dot:active{
-    background:lightcoral;
+    background:#fff;
 }
 
 .display-none{
@@ -348,4 +386,10 @@
 }
 .slider2{
     display: none;
+}
+.paralax-news{
+    margin-top: 100px;
+}
+.slider2{
+    margin-top: 80px;
 }

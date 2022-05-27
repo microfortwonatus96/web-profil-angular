@@ -1,4 +1,4 @@
-<section id="home">
+<section id="home" class="section1 home">
   <div>
     <div
       id="nav"
@@ -27,7 +27,7 @@
         <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
         <li class="menu">
           <a (click)="show()" class="text-a side-nav">Our Products</a>
-          <i class="icon-chevron-black"></i>
+          <!-- <i class="icon-chevron-black"></i> -->
         </li>
         <li class="menu">
           <a routerLink="/about-us" class="text-a">About Us</a>
@@ -41,7 +41,7 @@
         </li>
         <li class="menu">
           <a class="text-a menu">en</a>
-          <i class="icon-chevron-black"></i>
+          <!-- <i class="icon-chevron-black"></i> -->
         </li>
       </ul>
 
@@ -170,19 +170,6 @@
           <div class="desc-about">{{ abouttext.desc }}</div>
         </div>
       </ng-container>
-
-      <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="20px">
-        <ng-container *ngIf="newstext">
-          <div class="content-1">{{ newstext.highlight }}</div>
-          <div class="content-2">{{ newstext.date }}</div>
-          <div class="content-3">{{ newstext.title }}</div>
-          <div class="content-3">{{ newstext.hastag }}</div>
-          <div class="dot-container">
-            <div class="single-dot" (click)="click1()"></div>
-            <div class="single-dot" (click)="click2()"></div>
-          </div>
-        </ng-container>
-      </div>
     </div>
   </div>
 
@@ -269,5 +256,76 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="home2" class="home2">
+  <div
+      id="nav"
+      class="sticky-news nav-2 "
+      fxLayout="row"
+      fxLayoutAlign="space-around center"
+    >
+      <input type="checkbox" id="check" (click)="openMenu()" />
+      <label for="check" class="checkbtn test">
+        <i id="showOne" class="icon-crumb toggle-black"></i>
+      </label>
+      <div class="icon-header-css">
+        <div class="logo2"></div>
+      </div>
+      
+    <ul
+        class="navbar1 nav-1 sidebar-nav"
+        id="close"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        fxLayoutGap="40px"
+      >
+        <label for="check" class="checkbtn" (click)="closeSideNav()">
+          <li><a class="icon-close"></a></li>
+        </label>
+        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+        <li class="menu" >
+          <a (click)="show()" class="text-a">Our Products</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/about-us" class="text-a">About Us</a>
+        </li>
+        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+        <li class="menu" (click)="newsMenu()">
+          <a routerLink="/news" class="text-a">News</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/contact-us" class="text-a">Contact Us</a>
+        </li>
+        <li class="menu"><a class="text-a menu">en</a></li>
+      </ul>
+      
+      <ul
+        class="sidebar-nav nav-1 hide-nav"
+        id="close"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        fxLayoutGap="40px"
+      >
+        <label for="check" class="checkbtn" (click)="closeSideNav()">
+          <li><a class="icon-close"></a></li>
+        </label>
+        <li class="menu"><a routerLink="/" class="active text-a">Home</a></li>
+        <li class="menu">
+          <a (click)="showSideNav()" class="text-a side-nav">Our Products</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/about-us" class="text-a">About Us</a>
+        </li>
+        <li class="menu"><a routerLink="/career" class="text-a">Career</a></li>
+        <li class="menu">
+          <a routerLink="/news" class="text-a" (click)="newsMenu()">News</a>
+        </li>
+        <li class="menu">
+          <a routerLink="/contact-us" class="text-a">Contact Us</a>
+        </li>
+        <li class="menu"><a class="text-a menu">en</a></li>
+      </ul>
   </div>
 </section>

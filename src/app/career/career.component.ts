@@ -12,7 +12,7 @@ declare var $: any;
   templateUrl: './career.component.html',
   styleUrls: ['./career.component.scss'],
 })
-export class CareerComponent implements OnInit, AfterViewInit {
+export class CareerComponent implements OnInit {
   stateHeader: any = false;
   career: any = {
     title: 'CAREER',
@@ -20,11 +20,6 @@ export class CareerComponent implements OnInit, AfterViewInit {
   };
 
   constructor(private router: Router) {
-    this.loadNavSticky();
-  }
-
-  ngAfterViewInit() {
-    this.loadNavSticky();
   }
   ngOnInit(): void {
     $('html, body').animate(
@@ -33,6 +28,7 @@ export class CareerComponent implements OnInit, AfterViewInit {
       },
       'slow'
     );
+    
     this.loadNavSticky();
 
     let openSideNav = document.querySelector('.test');
@@ -48,31 +44,27 @@ export class CareerComponent implements OnInit, AfterViewInit {
     (<HTMLElement>scrol).addEventListener(
       'scroll',
       function () {
-        const scrolled = Math.floor((<HTMLElement>scrol).scrollTop);
+        const scrolled = Math.round((<HTMLElement>scrol).scrollTop);
+
         let header = document.querySelector('#nav');
+        console.log(header);
         let icon = document.querySelector('.icon-header-css');
         let tabs = document.querySelector('#tabsNav');
         let toggle = document.querySelector('.icon-crumb');
         let news = document.querySelector('.sticky-news');
-        if (scrolled > 710) {
-          if (!header || !icon || !tabs) return;
-          (<HTMLElement>header).classList.add('sticky');
+        if (scrolled >= 615) {   
           (<HTMLElement>header).classList.remove('nav');
-          if (!news) {
-            (<HTMLElement>icon).classList.add('logo2');
-            (<HTMLElement>icon).classList.remove('logo1');
-          }
+          (<HTMLElement>header).classList.add('sticky');
+          (<HTMLElement>icon).classList.add('logo2');
+          (<HTMLElement>icon).classList.remove('logo1');
           (<HTMLElement>tabs).classList.add('tab1');
           toggle?.classList.add('toggle-black');
           toggle?.classList.remove('icon-toggle');
         } else {
-          if (!header || !icon || !tabs) return;
           (<HTMLElement>header).classList.remove('sticky');
           (<HTMLElement>header).classList.add('nav');
-          if (!news) {
-            (<HTMLElement>icon).classList.remove('logo2');
-            (<HTMLElement>icon).classList.add('logo1');
-          }
+          (<HTMLElement>icon).classList.remove('logo2');
+          (<HTMLElement>icon).classList.add('logo1'); 
           (<HTMLElement>tabs).classList.remove('tab1');
           toggle?.classList.remove('toggle-black');
           toggle?.classList.add('icon-toggle');

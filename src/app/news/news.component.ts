@@ -21,8 +21,7 @@ export class NewsComponent implements OnInit {
     hastag: '#Technology #Finance #hashtag3 #hashtag4',
     slide: '',
   };
-  // slider1 = true;
-  // slider2 = false;
+  
   newsUpdate = false;
   newsSlider = false;
 
@@ -42,7 +41,7 @@ export class NewsComponent implements OnInit {
       'slow'
     );
 
-    this.loadNews();
+    // this.loadNews();
     setTimeout(() => {
       let news = document.querySelector('#nav');
       news?.classList.remove('nav');
@@ -53,24 +52,58 @@ export class NewsComponent implements OnInit {
       let toggle = document.querySelector('.icon-crumb');
       (<HTMLElement>toggle).classList.add('toggle-black');
       (<HTMLElement>toggle).classList.remove('icon-toggle');
+      let section1 = document.querySelector("#home")
+      section1?.classList.add('hide-nav')
     }, 100);
   }
+  
   loadNews() {
+   
     let scrol = document.querySelector('.menu-news');
     scrol?.addEventListener('click', function () {
+      // set section header
+      let section1 = document.querySelector("#home")
+      section1?.classList.add('hide-nav')
       let header = document.getElementById('nav');
       let icon = document.querySelector('.icon-header-css');
       let toggle = document.querySelector('.icon-crumb');
-
+      console.log("test", toggle)
       header?.classList.add('sticky-news');
       header?.classList.remove('sticky');
       header?.classList.remove('nav');
 
       icon?.classList.add('logo2');
-      // icon?.classList.remove('logo1');
+      icon?.classList.remove('logo1');
 
       toggle?.classList.add('toggle-black');
       toggle?.classList.remove('icon-toggle');
     });
+  }
+  
+  click1() {
+    let sld1 = document.querySelector('.display-block');
+    let slider1 = document.querySelector('.paralax-section1');
+    let slider2 = document.querySelector('.paralax-section2');
+
+    if (sld1) {
+      slider2?.classList.remove('display-block');
+      slider2?.classList.add('display-none');
+      slider1?.classList.add('display-block');
+    } else {
+      slider2?.classList.add('display-none');
+      slider1?.classList.add('display-block');
+    }
+  }
+  click2() {
+    let slider1 = document.querySelector('.paralax-section1');
+    let slider2 = document.querySelector('.paralax-section2');
+    let sld2 = document.querySelector('.display-block');
+    let headNews = document.querySelector('.paralax-news')
+
+    slider1?.classList.remove('display-block');
+    slider1?.classList.add('display-none');
+    slider2?.classList.add('display-block');
+    headNews?.classList.add('display-none');
+    headNews?.classList.remove('display-block');
   }
 }

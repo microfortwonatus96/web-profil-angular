@@ -17,8 +17,11 @@
     }
     .logo2{
         position: relative;
-        right: 90px;
-        width: 45% !important;
+        right: 60px;
+        width: 180px !important;
+    }
+    .logo1{
+        right: 90px !important;
     }
     .desc-about{
         font-size: 34px !important;
@@ -26,12 +29,17 @@
         line-height:50px !important;
         padding-right: 190px;
     }
-
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
-    section{
-        height: 65vh !important;
+    // section{
+    //     height: 65vh !important;
+    // }
+    .text-a{
+        font-size: 10px !important;
+    }
+    .logo2{
+        width: 150px !important;
     }
 }
 
@@ -39,8 +47,26 @@
     section{
         height: 56vh !important;
     }
+    .text-a{
+        font-size: 10px !important;
+    }
+    .logo2{
+        width: 150px !important;
+    }
 }
 
+@media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait){
+    .logo2{
+        position: relative !important;
+        right: 100px !important;
+    }
+    .logo1{
+        right: 110px !important;
+    }
+    .text-a{
+        font-size: 16px !important;
+    }
+}
 /* section 1 */
 *{
     padding: 0;
@@ -49,7 +75,7 @@
     list-style: none;
     box-sizing: border-box;
 }
-section{
+.section1{
     background: linear-gradient(rgba(28, 28, 32, 0.4), rgba(28, 28, 32, 0.4), rgba(28, 28, 32, 0.4)), url("../../assets/images/businessman.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -106,7 +132,7 @@ section{
     content: url(../../assets/images/list.svg);
     width: 30px;
     position: relative;
-    right: 20px;
+    // right: 20px;
 }
 .text-a{
     color: #ffffff;
@@ -154,12 +180,18 @@ section{
 .display-block{
     display: block;
 }
-/* end section 1 */
 
+/* end section 1 */
 
 // setting navbar toggle
 @media (max-width: 568px){
+    
     .sticky ul li{
+        display: block;
+        line-height: 20px;
+        margin: 20px 0px;
+    }
+    .sticky-news ul li{
         display: block;
         line-height: 20px;
         margin: 20px 0px;
@@ -199,7 +231,7 @@ section{
     }
     .logo1{
         margin: 10px 0px 0px 20px;
-        right: 90px;
+        right: 110px;
         width: 160px;
     }
     a{
@@ -359,3 +391,4 @@ section{
     left: 5px;
     width: 10px;
 }
+

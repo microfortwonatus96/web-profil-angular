@@ -51,30 +51,24 @@ export class WebProfilCssComponent implements OnInit,AfterViewInit {
     const scrolled = Math.round((<HTMLElement>scrol).scrollTop);
     let header = document.querySelector('#nav');
     let icon = document.querySelector('.icon-header-css');
+   
     let toggle = document.querySelector('.checkbtn');
     let news  = document.querySelector('.sticky-news');
-  
      if(scrolled >= 615){
       if(!header || !icon || !toggle)return
       (<HTMLElement>header).classList.remove('nav');
-      (<HTMLElement>header).classList.add('sticky'); 
-      if(!news){    
+      (<HTMLElement>header).classList.add('sticky');    
       (<HTMLElement>icon).classList.add('logo2');
       (<HTMLElement>icon).classList.remove('logo1');
       (<HTMLElement>toggle).classList.add('toggle-black');
       (<HTMLElement>toggle).classList.remove('icon-toggle');
-      }
-
      }else{
-      if(!header || !icon || !toggle)return
       (<HTMLElement>header).classList.remove('sticky');
       (<HTMLElement>header).classList.add('nav');
-      if(!news){
       (<HTMLElement>icon).classList.remove('logo2');
       (<HTMLElement>icon).classList.add('logo1');
       (<HTMLElement>toggle).classList.remove('toggle-black');
       (<HTMLElement>toggle).classList.add('icon-toggle');
-      }
      }
     }, false);
   }
